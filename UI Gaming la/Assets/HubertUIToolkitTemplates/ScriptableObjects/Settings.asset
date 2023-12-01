@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d7f97955c2d4304a8f21e811bfcc220, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 29796b34b9ae10946a67bc3d668eb9bd, type: 2}
+  globalVolume: 76.4
+  musicVolume: 100
+  sfxVolume: 100
+  voiceVolume: 100
+  dialogueSpeedRange: {x: 0, y: 2}
+  dialogueSpeed: 0.02
+  autoDialogue: 0
+  <AutoDialogueDelay>k__BackingField: 1
+  playerName: Hub

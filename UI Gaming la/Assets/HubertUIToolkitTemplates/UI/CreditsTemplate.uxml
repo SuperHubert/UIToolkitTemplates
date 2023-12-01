@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/menuStyle.uss?fileID=7433441132597879392&amp;guid=c351f9e6e19c5824cbafd11b155b45fa&amp;type=3#menuStyle" />
+    <ui:GroupBox name="credits-group" class="panel" style="background-color: rgb(255, 255, 255); padding-top: 0; padding-bottom: 0; padding-left: 0; margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px; padding-right: 0; flex-grow: 1;">
+        <ui:GroupBox style="flex-direction: row; justify-content: space-around; align-self: auto; align-items: auto;">
+            <ui:Label tabindex="-1" text="Credits" parse-escape-sequences="true" display-tooltip-when-elided="true" class="panelTitle" />
+            <ui:GroupBox name="spacing" style="flex-grow: 1;" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="close-button" style="align-self: center; -unity-text-align: middle-center; background-image: url(&apos;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=-6527069497977903076&amp;guid=211ac842d68605440bef68c9d6a46096&amp;type=3#check-dash&apos;); height: 64px; width: 64px;" />
+        </ui:GroupBox>
+        <ui:GroupBox name="settings-group" class="settingsContainer">
+            <ui:Label tabindex="-1" text="Hubert" parse-escape-sequences="true" display-tooltip-when-elided="true" name="name-label-0" style="font-size: 100%;" />
+            <ui:Label tabindex="-1" text="fizsdjfsdpifpo^sdfp^dsofdsp^sgsdg" parse-escape-sequences="true" display-tooltip-when-elided="true" name="name-label-1" style="font-size: 100%;" />
+        </ui:GroupBox>
+    </ui:GroupBox>
+</ui:UXML>

@@ -1,0 +1,24 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="PauseTemplate" src="project://database/Assets/UI/SettingsTemplate.uxml?fileID=9197481963319205126&amp;guid=eac864abd6d43f448a7bafd44e8d9989&amp;type=3#SettingsTemplate" />
+    <ui:Template name="CreditsTemplate" src="project://database/Assets/UI/CreditsTemplate.uxml?fileID=9197481963319205126&amp;guid=987192f18bfeb6c46920fd3523b841af&amp;type=3#CreditsTemplate" />
+    <Style src="project://database/Assets/UI/USS/menuStyle.uss?fileID=7433441132597879392&amp;guid=c351f9e6e19c5824cbafd11b155b45fa&amp;type=3#menuStyle" />
+    <ui:VisualElement name="menu" style="flex-grow: 1;">
+        <ui:VisualElement name="logo-root" style="flex-grow: 1; max-height: 50%;">
+            <ui:GroupBox name="logo-group" style="align-items: center;">
+                <ui:VisualElement name="logo" style="background-image: url(&apos;project://database/Assets/Art/Sprites/selogo_onwhite.jpg?fileID=21300000&amp;guid=8bddcea6ea79be249a8007f53d254a0d&amp;type=3#selogo_onwhite&apos;); width: 1200px; height: 630px;" />
+            </ui:GroupBox>
+        </ui:VisualElement>
+        <ui:GroupBox name="buttons-group" class="menuButtonContainer">
+            <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="play-button" class="menuButton" />
+            <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="settings-button" class="menuButton" />
+            <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="credits-button" class="menuButton" />
+            <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="quit-button" class="menuButton" />
+        </ui:GroupBox>
+    </ui:VisualElement>
+    <ui:VisualElement name="settings" style="flex-grow: 1; display: none;">
+        <ui:Instance template="PauseTemplate" name="SettingsTemplate" class="separateScreen" />
+    </ui:VisualElement>
+    <ui:VisualElement name="credits" style="flex-grow: 1; display: none;">
+        <ui:Instance template="CreditsTemplate" name="CreditsTemplate" class="separateScreen" />
+    </ui:VisualElement>
+</ui:UXML>

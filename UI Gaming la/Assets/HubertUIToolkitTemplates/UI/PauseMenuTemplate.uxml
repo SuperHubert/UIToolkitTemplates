@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="PauseTemplate" src="project://database/Assets/UI/SettingsTemplate.uxml?fileID=9197481963319205126&amp;guid=eac864abd6d43f448a7bafd44e8d9989&amp;type=3#SettingsTemplate" />
+    <Style src="project://database/Assets/UI/USS/menuStyle.uss?fileID=7433441132597879392&amp;guid=c351f9e6e19c5824cbafd11b155b45fa&amp;type=3#menuStyle" />
+    <ui:VisualElement name="menu" style="flex-grow: 1;">
+        <ui:VisualElement name="background" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.7);">
+            <ui:GroupBox name="Spacing" class="pauseMenuSpacing" />
+            <ui:VisualElement class="panel" style="flex-grow: 1; background-color: rgb(255, 255, 255); margin-right: 30%; margin-left: 30%;">
+                <ui:GroupBox name="buttons-group" class="menuButtonContainer">
+                    <ui:VisualElement name="VisualElement" style="margin-bottom: -10%; margin-top: 20px;">
+                        <ui:Label tabindex="-1" text="Paused&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="Label" class="panelTitle" style="scale: 1.5 1.5;" />
+                    </ui:VisualElement>
+                    <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="resume-button" class="menuButton" />
+                    <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="settings-button" class="menuButton" />
+                    <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="menu-button" class="menuButton" />
+                </ui:GroupBox>
+            </ui:VisualElement>
+            <ui:GroupBox name="Spacing" class="pauseMenuSpacing" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="settings" style="flex-grow: 1; display: none;">
+        <ui:Instance template="PauseTemplate" name="SettingsTemplate" class="separateScreen" />
+    </ui:VisualElement>
+</ui:UXML>

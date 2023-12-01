@@ -1,0 +1,28 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/menuStyle.uss?fileID=7433441132597879392&amp;guid=c351f9e6e19c5824cbafd11b155b45fa&amp;type=3#menuStyle" />
+    <ui:VisualElement style="flex-grow: 0; height: 70%;">
+        <ui:GroupBox name="Spacing" style="justify-content: center; flex-grow: 1;">
+            <ui:GroupBox name="choices-box" style="align-self: stretch; margin-right: 25%; margin-left: 25%;">
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="choice-button-0" class="dialogueChoiceButton" />
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="choice-button-1" class="dialogueChoiceButton" />
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="choice-button-2" class="dialogueChoiceButton" />
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="choice-button-3" class="dialogueChoiceButton" />
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="choice-button-4" class="dialogueChoiceButton" />
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="choice-button-5" class="dialogueChoiceButton" />
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="choice-button-6" class="dialogueChoiceButton" />
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="choice-button-7" class="dialogueChoiceButton" />
+            </ui:GroupBox>
+        </ui:GroupBox>
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-direction: row; flex-grow: 1;">
+        <ui:GroupBox name="dialogue-group" class="dialogueGroup panel" style="background-color: rgb(255, 255, 255); display: flex;">
+            <ui:VisualElement style="flex-grow: 1;">
+                <ui:GroupBox name="speaker-group" style="flex-direction: row; justify-content: space-around; align-self: auto; align-items: auto; display: flex;">
+                    <ui:Label tabindex="-1" text="Speaker" parse-escape-sequences="true" display-tooltip-when-elided="true" name="speaker-text" class="panelTitle" />
+                    <ui:GroupBox name="spacing" style="flex-grow: 1;" />
+                </ui:GroupBox>
+                <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="dialogue-text" text="suuuuuuuuu" style="font-size: 28px; white-space: normal; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px; flex-grow: 1;" />
+            </ui:VisualElement>
+        </ui:GroupBox>
+    </ui:VisualElement>
+</ui:UXML>

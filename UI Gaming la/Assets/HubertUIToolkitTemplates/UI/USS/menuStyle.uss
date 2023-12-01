@@ -1,0 +1,98 @@
+.separateScreen {
+    flex-grow: 1;
+}
+
+.menuButton {
+    width: 33%;
+    height: 12.5%;
+    font-size: 36px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    transition-duration: 0.1s;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.menuButton:hover {
+    width: 35%;
+    height: 12.5%;
+    font-size: 36px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    transition-duration: 0.1s;
+}
+
+.menuButtonContainer {
+    align-items: center;
+    flex-grow: 1;
+}
+
+.settingsContainer {
+    align-items: center;
+    flex-grow: 1;
+}
+
+.settingsElement {
+    width: 25%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    scale: 2 2;
+}
+
+.innerSettingsElement {
+    width: 50%;
+}
+
+.innerSliderElement {
+    flex-grow: 1;
+}
+
+.pauseMenuSpacing {
+    flex-grow: 1;
+}
+
+.dialogueGroup {
+    flex-direction: row;
+    align-items: stretch;
+    flex-grow: 1;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.dialogueChoiceButton {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    transition-duration: 0.1s;
+}
+
+.dialogueChoiceButton:hover {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    margin-right: -20px;
+    margin-left: -20px;
+    transition-duration: 0.1s;
+}
+
+.panelTitle {
+    font-size: 64px;
+    color: rgb(102, 102, 102);
+}
+
+.panel {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
