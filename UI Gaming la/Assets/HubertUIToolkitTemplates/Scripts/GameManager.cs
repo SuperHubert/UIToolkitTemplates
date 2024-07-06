@@ -1,12 +1,13 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     [Header("Debug")]
-    [SerializeField] private DialogueManager dialogueManager;
-    [SerializeField] private TextAsset debugTextAsset;
+    [SerializeField]
+    private DialogueManager dialogueManager;
+    [SerializeField]
+    private TextAsset debugTextAsset;
     
     private IEnumerator Start() 
     {

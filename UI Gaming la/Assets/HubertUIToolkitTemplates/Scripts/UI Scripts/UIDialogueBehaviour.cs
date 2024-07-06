@@ -13,6 +13,7 @@ public class UIDialogueBehaviour : MonoBehaviour
     private VisualElement speakerElement;
     private Label speakerText;
     private Label dialogueText;
+    private Label backgroundText;
     private List<Button> choiceButtons = new List<Button>();
     public event Action<int> OnChoiceSelected; 
     
@@ -24,6 +25,7 @@ public class UIDialogueBehaviour : MonoBehaviour
         speakerElement = rootVisualElement.Q<VisualElement>("speaker-group");
         speakerText = speakerElement.Q<Label>("speaker-text");
         dialogueText = rootVisualElement.Q<Label>("dialogue-text");
+        backgroundText = rootVisualElement.Q<Label>("background-text");
 
         for (int i=0;i < 8;i++)
         {
@@ -85,6 +87,11 @@ public class UIDialogueBehaviour : MonoBehaviour
     public void SetSpeaker(string speaker)
     {
         speakerText.text = speaker;
+    }
+
+    public void SetBackground( string background )
+    {
+        backgroundText.text = $"background:{background}";
     }
     
     public void SetText(string dialogue)
