@@ -3,6 +3,8 @@ EXTERNAL getVariables()
 INCLUDE variables.ink
 INCLUDE ville.ink
 
+~ getVariables()
+
 -> main
 
 === main ===
@@ -10,7 +12,6 @@ INCLUDE ville.ink
 #speaker:A
 #speaker:B
 
-~ getVariables()
 
 Bonjour personnage A. #speaker:A #speaker:{player_name}
 Bonjour {player_name}. #speaker:A
@@ -28,6 +29,7 @@ Mon atelier est vraiment cool.
 C'est <>
 vrai. #speaker:{player_name}
 
++ {meet_John} [parler a John] -> john
 * [discuter dans l'atelier] -> atelier
 + {CHOICE_COUNT() == 0 }[discuter dans l'atelier (encore)] -> atelier
 + [discuter dehors]
@@ -35,6 +37,28 @@ C'est un choix nul :c. #speaker:A
 Mais interessant.
 
 -> outside
+
+= espace
+
+{
+- meet_John :
+    -> john
+- else:
+    -> no_john
+}
+
+
+= john
+
+il est la
+
+-> home
+
+= no_john
+
+il est pas la
+
+-> home
 
 = atelier
 #background:atelier

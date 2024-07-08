@@ -21,4 +21,4 @@ MonoBehaviour:
   dialogueSpeed: 0.02
   autoDialogue: 0
   <AutoDialogueDelay>k__BackingField: 1
-  playerName: Furina
+  playerName: Bob
